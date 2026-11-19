@@ -8,6 +8,22 @@ A full-stack Next.js application for creating custom AI meeting agents, joining 
 
 > This repository is based on [CodeWithAntonio’s Meet AI project](https://github.com/code-with-antonio/next15-meet-ai). Original implementation credit belongs to CodeWithAntonio. This edition preserves the source and adds clearer setup, deployment documentation, and repository maintenance improvements. It does not claim the tutorial implementation as original work.
 
+## Live interactive prototype
+
+[**Open the Meet AI prototype**](https://next15-meet-ai-main.vercel.app)
+
+The deployed version is a standalone, responsive demo in `prototype/`. Explore sample meetings, search and filter the workspace, create meetings and agent profiles, try a simulated call, read illustrative summaries and transcripts, download sample notes, and ask scripted follow-up questions. Changes are saved in your browser only. Calls and AI responses are simulated; no service credentials are required.
+
+The original full-stack Next.js application remains in this repository for future development. Its integration setup is documented below.
+
+### Run the prototype locally
+
+```sh
+python -m http.server 4173 --directory prototype
+```
+
+Open `http://localhost:4173`. To deploy this version on Vercel, use **Other** as the framework, `prototype` as the root directory, no build/install command, and `.` as the output directory. `prototype/vercel.json` supplies the static route fallback.
+
 ## What the application does
 
 - **Custom agents:** create and manage AI agents with meeting-specific instructions.
